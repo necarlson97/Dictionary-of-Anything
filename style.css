@@ -1,0 +1,98 @@
+@font-face {
+    font-family: runescape;
+    src: url(runescape.otf);
+}
+
+body {
+    font-family: runescape;
+    margin: 5%;
+    color: #a89466;
+    background-color: #161616;
+}
+
+#searchBar {
+    text-align: center;
+    padding: 3%;
+}
+
+#search {
+    font-family: runescape;
+    color: #161616;
+    background-color: #a89466;
+    border: none;
+    padding: 1px;
+    font-size: 30px;
+}
+
+#search:focus {
+    outline-color: white;
+}
+
+#search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #161616;
+}
+
+#editButton {
+    background-color: black;
+    color: #a89466;
+    border: none;
+    font-size: 30px;
+    margin: 0%;
+    margin-left: -3%;
+}
+
+#resetButton {
+    background-color: black;
+    color: #a89466;
+    border: none;
+    font-size: 30px;
+    margin: 0%;
+    padding: 0%;
+    
+    display: none;
+}
+
+#results {
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    padding: 3%;
+    padding-top: 0%;
+    background-color: black;
+}
+
+#wordLable {
+
+}
+
+#defLable {
+    font-size: 30px;
+    white-space: pre-wrap;
+}
+
+h1 {
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 58px;
+    margin: 0px;
+}
+
+textarea {
+    width: 102%;
+    height: 40%;
+    font-size: 30px;
+    font-family: runescape;
+    background-color: #161616;
+    color: #a89466;
+    padding: 1%;
+    margin: -1%;
+    border: none;
+}
+
+textarea:focus {
+    outline-color: white;
+}
+
+input:focus {
+    outline-color: white;
+}

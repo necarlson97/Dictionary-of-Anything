@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.2.1.js"></script>
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+        <script src="generator.js"></script>
+        <script src="script.js"></script>
+        <title>Dictionary of Anything</title>
+        <meta name="description" content="Dictionary of every possible word">
+    </head>
+    <body>
+        <h1> Dictionary   ,, of ,,   Anything</h1>
+        <div id="searchBar"><input id="search" placeholder=" search..." onkeydown="search()" autofocus> </div>
+        <div id="results"> 
+            <input id="editButton" type="button" value="✎" onclick="edit()">
+            <input id="resetButton" type="button" value="⟲" onclick="resetWord()">
+            <h1 id="wordLable">Word</h1>
+            <p id="defLable">Definition</p>
+        </div>
+    </body>
+</html>
