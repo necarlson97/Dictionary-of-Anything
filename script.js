@@ -50,14 +50,19 @@ function tryMW(word) {
         word+"?key="+mwKey;
     
     $.ajax({ 
-        url: searchUrl, 
+        url: searchUrl, crossDomain: true,
+        headers: {
+            "Access-Control-Allow-Origin":"*", "Access-Control-Allow-Headers":"*"
+        },
         success: function(data) {
 
             // Check to see if we got MW results
             var wordData = data.getElementById(word+"[1]");
             if(wordData == null) wordData = data.getElementById(word);
+
             if(wordData == null) {
-                tryUrban(word);
+                // tryUrban(word);
+                newWord(word)
                 return;
             }
             
@@ -84,7 +89,10 @@ function tryUrban(word) {
     var searchUrl = "http://api.urbandictionary.com/v0/define?term="+word;
 
     $.ajax({ 
-        url: searchUrl, 
+        url: searchUrl, crossDomain: true,
+        headers: {
+            "Access-Control-Allow-Origin":"*", "Access-Control-Allow-Headers":"*"
+        },
         success: function(data) {
             if(data.list.length > 0) {
                 var def = data.list[0].definition;
